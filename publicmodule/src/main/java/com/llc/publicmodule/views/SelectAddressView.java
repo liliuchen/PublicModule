@@ -15,6 +15,8 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 
+import com.llc.publicmodule.R;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -63,19 +65,18 @@ public class SelectAddressView extends LinearLayout {
         mlvProvince.setVisibility(GONE);
         mlvStreet.setVisibility(GONE);
 
-        switch (id) {
-            case R.id.select_address_view_rb_province:
-                mlvProvince.setVisibility(VISIBLE);
-                break;
-            case R.id.select_address_view_rb_city:
-                mlvCity.setVisibility(VISIBLE);
-                break;
-            case R.id.select_address_view_rb_town:
-                mlvTown.setVisibility(VISIBLE);
-                break;
-            case R.id.select_address_view_rb_street:
-                mlvStreet.setVisibility(VISIBLE);
-                break;
+        if (id == R.id.select_address_view_rb_province) {
+            mlvProvince.setVisibility(VISIBLE);
+
+        } else if (id == R.id.select_address_view_rb_city) {
+            mlvCity.setVisibility(VISIBLE);
+
+        } else if (id == R.id.select_address_view_rb_town) {
+            mlvTown.setVisibility(VISIBLE);
+
+        } else if (id == R.id.select_address_view_rb_street) {
+            mlvStreet.setVisibility(VISIBLE);
+
         }
 
     }
@@ -96,19 +97,18 @@ public class SelectAddressView extends LinearLayout {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 showListView(checkedId);
                 int index = 1;
-                switch (checkedId) {
-                    case R.id.select_address_view_rb_province:
-                        index = 1;
-                        break;
-                    case R.id.select_address_view_rb_city:
-                        index = 2;
-                        break;
-                    case R.id.select_address_view_rb_town:
-                        index = 3;
-                        break;
-                    case R.id.select_address_view_rb_street:
-                        index = 4;
-                        break;
+                if (checkedId == R.id.select_address_view_rb_province) {
+                    index = 1;
+
+                } else if (checkedId == R.id.select_address_view_rb_city) {
+                    index = 2;
+
+                } else if (checkedId == R.id.select_address_view_rb_town) {
+                    index = 3;
+
+                } else if (checkedId == R.id.select_address_view_rb_street) {
+                    index = 4;
+
                 }
                 for (; index < 4; index++) {
                     selectFlags[index] = false;
