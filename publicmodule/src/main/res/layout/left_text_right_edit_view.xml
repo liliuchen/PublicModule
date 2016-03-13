@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    >
+    <TextView
+        android:id="@+id/left_text_right_edit_view_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="字体"
+        />
+    <EditText
+        android:id="@+id/left_text_right_edit_view_edittext"
+        android:layout_marginLeft="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>

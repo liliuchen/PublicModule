@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="50dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="呃，页面无法显示啦！"
+            android:textColor="#CCC"
+            android:textSize="20sp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="·网络信号弱或者数据连接异常"
+            android:textColor="#CCC"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="·网站可能出现故障"
+            android:textColor="#CCC"
+            android:textSize="18sp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/webview_loading_error_btn_back"
+                android:layout_width="100dp"
+                android:background="#CCC"
+                android:layout_height="wrap_content"
+                android:text="返回"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/webview_loading_error_btn_refresh"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector_1"
+                android:text="刷新"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LeftRightText">
+        <!-- 左边显示的字符. -->
+        <attr name="left_text" format="string" localization="suggested" />
+        <!-- 右边显示的字符 -->
+        <attr name="right_text" format="string" localization="suggested" />
+        <!-- 右边显示的数字-->
+        <attr name="right_msg_num" format="string" localization="suggested"  />
+        <!-- 字体大小-->
+        <attr name="leftTextSize" format="dimension|reference"/>
+        <!-- 字体大小-->
+        <attr name="rightTextSize" format="dimension|reference"/>
+        <!-- 左边字体颜色-->
+        <attr name="leftTextColor" format="color|reference"/>
+        <!-- 右边字体颜色-->
+        <attr name="rightTextColor" format="color|reference"/>
+        <attr name="drawableLeft" format="reference"/>
+        <attr name="drawableRight" format="reference"/>
+        <attr name="drawablePadding" format="dimension"/>
+    </declare-styleable>
+</resources>

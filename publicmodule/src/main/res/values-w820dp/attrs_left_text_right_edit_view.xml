@@ -1,0 +1,12 @@
+<resources>
+    <declare-styleable name="LeftTextRightEditView">
+        <attr name="LTRE_leftText" format="string" localization="suggested"/>
+        <attr name="LTRE_rightHint" format="string" localization="suggested"/>
+        <attr name="LTRE_leftTextColor" format="color|reference" />
+        <attr name="LTRE_rightTextColor" format="color|reference" />
+        <attr name="LTRE_rightBackgroundDrawable" format="color|reference" />
+        <attr name="LTRE_rightTextSize" format="dimension|reference" />
+        <attr name="LTRE_leftTextSize" format="dimension|reference" />
+    </declare-styleable>
+
+</resources>

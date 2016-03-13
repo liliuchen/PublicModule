@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CleanEditText">
+        <attr name="hint" format="string" localization="suggested" />
+        <attr name="text" format="string" localization="suggested" />
+        <attr name="textSize" format="dimension|reference"/>
+        <attr name="textColor" format="color|reference"/>
+        <attr name="rightdrawableRight" format="reference"/>
+        <attr name="c_background" format="reference"/>
+        <attr name="rightDrawablePadding" format="dimension"/>
+    </declare-styleable>
+
+</resources>

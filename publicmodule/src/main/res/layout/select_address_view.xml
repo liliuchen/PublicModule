@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/select_address_view_radiogroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+
+            android:id="@+id/select_address_view_rb_province"
+            style="@style/Select_Address_View_Style"
+            android:clickable="true"
+            android:text="省" />
+
+        <RadioButton
+            android:id="@+id/select_address_view_rb_city"
+            style="@style/Select_Address_View_Style"
+            android:checked="false"
+
+            android:text="市" />
+
+        <RadioButton
+            android:id="@+id/select_address_view_rb_town"
+            style="@style/Select_Address_View_Style"
+            android:checked="false"
+            android:text="区" />
+
+        <RadioButton
+            android:id="@+id/select_address_view_rb_street"
+            style="@style/Select_Address_View_Style"
+            android:checked="false"
+            android:text="街道" />
+    </RadioGroup>
+    <ProgressBar
+        android:id="@+id/select_address_view_pb_waiting"
+        android:layout_width="fill_parent"
+        android:visibility="gone"
+        android:layout_height="80dp" />
+
+    <ListView
+        android:id="@+id/select_address_view_lv_province"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+    <ListView
+        android:id="@+id/select_address_view_lv_city"
+        android:layout_width="fill_parent"
+        android:visibility="gone"
+        android:layout_height="fill_parent"/>
+
+    <ListView
+        android:visibility="gone"
+        android:id="@+id/select_address_view_lv_town"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+    <ListView
+        android:visibility="gone"
+        android:id="@+id/select_address_view_lv_street"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+</LinearLayout>
